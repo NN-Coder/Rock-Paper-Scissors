@@ -1,0 +1,6 @@
+name = input('What is your name?\n')
+print('Nice to meet you, %s' % name)
+homeland=input('Where are you from?')
+print('I am also from',homeland)
+fvg=input('what is your favorite game?')
+print('I don\'t like the game',fvg,'very much. But it is pretty good.')
