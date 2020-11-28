@@ -1,6 +1,31 @@
-name = input('What is your name?\n')
-print('Nice to meet you, %s' % name)
-homeland=input('Where are you from?')
-print('I am also from',homeland)
-fvg=input('what is your favorite game?')
-print('I don\'t like the game',fvg,'very much. But it is pretty good.')
+import random
+
+playerChoice ='test';
+
+while True:
+ playerChoice = input('What is your choice?\n')
+ choices = ('rock','paper','scissors');
+ if playerChoice not in choices:
+  print ('Not a valid choice.. Try again');
+  continue;
+ else:
+  break;
+ 
+
+print('Player choice is' , playerChoice);
+computerChoice= random.choice(choices);
+print('Computer choice is' , computerChoice);
+
+if playerChoice == computerChoice: 
+  print ('Its a draw!');
+elif playerChoice == 'rock' and computerChoice == 'scissors':
+  print ('Player wins!');
+elif playerChoice == 'scissors' and computerChoice == 'paper':
+  print ('Player wins!');
+elif playerChoice == 'paper' and computerChoice == 'rock':
+  print ('Player wins!');
+else:
+  print('Computer wins!');
+
+print ('End');
+
