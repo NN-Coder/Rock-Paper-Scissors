@@ -13,7 +13,7 @@ while True:
  
 
 print('Player choice is' , playerChoice);
-computerChoice= random.choice(choices);
+computerChoice = random.choice(choices);
 print('Computer choice is' , computerChoice);
 
 if playerChoice == computerChoice: 
